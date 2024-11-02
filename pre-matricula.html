@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Cadastro</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form" enctype="multipart/form-data">
+            <h2 class="title">Pré-Matricula</h2>
+            <div class="input-field">
+              <input type="text" placeholder="Nome completo" required/>
+            </div>
+            <div class="input-field">
+              <input class="cpf" type="text" placeholder="Cpf" autocomplete="off" maxlength="14" oninput="formatCPF(this)" required/>
+            </div>
+            <div class="input-field">
+              <input type="email" id="email" placeholder="E-mail" onblur="validateEmail(this)" required/>
+              <span id="emailError" class="error"></span>
+            </div>
+            <div class="input-field">
+              <input name="cep" type="text" id="cep" value="" placeholder="CEP" maxlength="9" required 
+               onblur="pesquisacep(this.value);" />
+            </div>
+            <div class="input-field">
+              <input name="rua" type="text" id="rua" placeholder="Rua" required/>
+            </div>
+            <div class="input-field">
+              <input name="bairro" type="text" id="bairro" placeholder="Bairro" required/>
+            </div>
+            <div class="input-field">
+              <input name="cidade" type="text" id="cidade"  placeholder="Cidade" required/>
+            </div>
+            <div class="input-field">
+              <input name="uf" type="text" id="uf" size="2" placeholder="UF" required/>
+            </div>
+            <div class="input-field2">
+              <p> Anexe a foto da sua Identidade e comprovante de endereço em um único arquivo.</p>
+            </div>
+            <div class="input-field2">             
+              <input type="file" id="fileUpload" name="fileUpload" multiple>   
+            </div>
+              <input type="submit" value="Enviar" class="btn solid">   
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Adiante a Sua Matricula !</h3>
+            <p>
+              Para adiantarmos sua Matricula é necessário que você 
+              preencha o formulário ao lado.
+            </p>
+          </div>
+          <img src="log.svg" class="image" alt="" />
+        </div>
+    </div>
+     <script src="app.js"></script>
+  </body>
+</html>
