@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Cursos</title>
+    <link rel="stylesheet" href="planilha-styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+     <!-- Inicio do meu Header -->
+     <nav class="nav">
+        <div class="logo-nav">
+            <img src="imagem-planilha/imagens/logo-rodape.png" alt="">
+        </div>
+    <ul class="nav-list">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../portifolioSenai/portfolio.html">Sobre</a></li>
+    <li><a href="planilha-index.html">Cursos</a></li>
+    <li class="dropdown">
+        <a href="#">Redes Sociais</a>
+        <div class="dropdown-contatos">
+            <a href="https://www.instagram.com/senaictti?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="../imagens/instagram.png" alt="" title="Instagram Senai"></a>
+            <a href="https://www.youtube.com/@senaiminas"><img src="../imagens/youtube_3938026.png" alt="" title="Youtube Senai"></a>
+            <a href="https://br.linkedin.com/school/senai-centro-de-treinamento-da-tecnologia-da-informa%C3%A7%C3%A3o-ctti-mg/"><img src="../imagens/linkedin_3536505.png" alt="" title="Linkedin Senai"></a>
+        </div>
+    </li>
+    <a href="../Pré Matricula/index.html">Pré Matricula</a>
+    </ul>
+</nav>  
+<!-- Final do meu Header -->
+    <h1>Nossos Cursos</h1>
+    
+    <!-- Barra de Pesquisa -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Digite o nome do curso..." oninput="filterCourses()">
+    </div>
+    
+    <div class="courses-container" id="coursesContainer"></div>
+    <div class="pagination">
+        <button onclick="prevPage()" id="prevButton">Anterior</button>
+        <button onclick="nextPage()" id="nextButton">Próximo</button>
+    </div>
+
+    <script src="planilha-script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>

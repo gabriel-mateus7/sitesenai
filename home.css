@@ -1,0 +1,354 @@
+@font-face {
+    font-family:"gibson";
+    src: url(C:\gabriel\siteSenai\Gibson-Font.zip\Demo_Fonts);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+   justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: "gibson",sans-serif;
+    background-color: #fff;
+    align-items: center;
+}
+/*inicio header*/
+.nav{
+    background-color: #0047b6; 
+    height: 80px; /*altura*/
+    width: 100%;/*largura*/
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    z-index: 9;
+}
+.nav img{
+    padding-top: 13px;
+    padding-left: 6px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 28px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 20px;
+}
+.nav-list a:hover{
+    color: #fff;
+    border-bottom: 5px solid white;
+    border-radius: 5px;
+}
+.dropdown-contatos{
+    position: absolute;
+    box-shadow:0 0 2px black;
+    display: none;
+}
+
+.dropdown-contatos a{
+    display: block;
+    color: black;
+}
+.dropdown-contatos a:hover{
+    border: solid #fff;
+}
+
+.dropdown:hover .dropdown-contatos{
+    display: block;
+    background-color: #0047b6;
+}
+.dropdown-contatos img{
+    width: 30px;
+}
+/*Fim estilização header*/
+.header{
+    padding: 1rem;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #006eff;
+    
+
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+}
+.nav-list a{
+    padding: 1.2rem;
+    text-decoration: none;
+}
+
+.header a img{
+    width: 1rem;
+}
+.logo{
+    
+}
+.logo img{
+    width: 100px;
+}
+/*fim header*/
+.img-main img{
+    margin-top: 30px;
+   
+    width: 100%;
+    height: 80vh;
+}
+/*inicio main*/
+
+.main{
+    padding-left: 3rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.left{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+}
+.left h2{
+    margin-bottom: 2rem;
+    font-size: 36px;
+    
+    
+}
+.left h2 a{
+    text-decoration: none;
+    color: black;
+}
+.left p{
+    font-size: 26px;
+    margin-bottom: 2rem;
+}
+.left button {
+    background-color: #0067B8;
+    color: white;
+    border: none;
+    padding: 20px 72px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.9s;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.left button a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.left button:hover{
+    transform: scale(1.1);/*Deixar o botão maior quando passar o mouse*/ 
+    border-radius: 10px;
+}
+.right{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9rem ;
+    width: 50%;
+    padding-left: 20px;
+}
+.right video{
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px black;
+    margin-right: 10px;
+}
+/*fim main*/
+
+.caixa-cursos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.title-cursos{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 25px;
+}
+.title-cursos a{
+    color: black;
+    text-decoration: none;
+}
+.left-cursos{
+    width:38%;
+    padding-right: 10px;
+}
+.left-cursos p{
+    margin-top: 18px;
+}
+.right-cursos{
+    width: 50%;
+}
+.carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 440px;
+    width: 880px;
+}
+.container-cursos{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+.container-cursos img{
+    object-fit: cover;
+    height: 500px;
+    width: 880px;
+}
+.button-saiba-mais{
+  
+}
+.button-saiba-mais button{
+    background-color: #0067B8;
+    color: white;
+    border: none;
+    padding: 20px 72px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.9s;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.button-saiba-mais a{
+    text-decoration: none;
+    color: #fff;
+}
+.button-saiba-mais:hover{
+    
+    transform: scale(1.1);/*Deixar o botão maior quando passar o mouse*/ 
+    border-radius: 10px;
+}
+/*Fim cursos*/
+.caixa-unidade{
+    margin-top: 40px;
+    padding-left: 3rem;
+    height: 100vh;
+    width: 100%;
+}
+.unidade{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-unidade  a{
+    text-decoration: none;
+    color: black;
+}
+.left-unidade{
+    margin-top: 1rem;
+    margin-right: 100px;
+}
+.left-unidade img{
+    border-radius: 1rem;
+    width: 430px;
+    box-shadow: 2px 2px 5px black;
+
+}
+.right-unidade h2{
+    width: 50%;
+    font-size: 32px;
+}
+.right-unidade a{
+    text-decoration: none;
+    color: black;
+}
+.right-unidade p{
+    width: 25rem;
+    margin-top: 2rem;
+}
+.right-unidade button{
+    background-color: #0067B8;
+    color: white;
+    border: none;
+    padding: 16px 61px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.9s;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.right-unidade button a{
+    text-decoration: none;
+    color: #fff;
+}
+.right-unidade button:hover{
+    transform: scale(1.1);/*Deixar o botão maior quando passar o mouse*/ 
+    border-radius: 10px;
+}
+
+/*FIm unidade*/
+.rodape{
+    background-color: #1d2bab;
+    display: flex;
+    padding-top: 0;
+    padding: 1rem;
+    flex-direction: column;
+
+}
+.links{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.links a:hover{
+    text-decoration: underline ;
+}
+.rodape1{   
+    flex-direction: column;
+}
+.rodape1 p{
+    color: #fff;
+}
+.rodape1 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.rodape2{
+    flex-direction: column;
+   
+}
+.rodape2 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.rodape3{
+    flex-direction: column;
+}
+.rodape3 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.rodape4{
+    display: flex;
+    margin-top: 2rem;
+}
+.rodape4 p{
+    color: #fff;
+    margin-left: 2rem;
+}
