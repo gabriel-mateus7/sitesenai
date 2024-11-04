@@ -52,7 +52,7 @@ const spreadsheetId = '1GjhWQe5Fw_sYr-TVFnpYeQ3EH6fjBrgUobQR8Z71lnA';
 
                 const button = document.createElement('button');
                 button.textContent = 'Matricule-se';
-                button.onclick = () => window.location.href = '../Pré Matricula/index.html';
+                button.onclick = () => window.location.href = 'formulario.html';
                 card.appendChild(button);
 
                 container.appendChild(card);
